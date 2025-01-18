@@ -12,7 +12,7 @@ A comprehensive project supporting JSON-based configurations with added expirati
 - Modular and extendable codebase.
 - Open source and community-driven.
 
-## Installation
+## Installation 1
 
 1. Clone the repository:
    ```bash
@@ -32,6 +32,20 @@ A comprehensive project supporting JSON-based configurations with added expirati
 4. Run the project:
    ```bash
    sudp make install
+   ```
+## or
+
+## Installation 2
+
+1. Get core mod:
+   ```bash
+   wget https://github.com/DindaPutriFN/Xray-core/releases/download/1.1.0/xray
+   chmod +x xray
+   ```
+
+2. Usage core mod:
+   ```bash
+   ./xray --help
    ```
 
 ## Usage
