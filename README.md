@@ -1,4 +1,4 @@
-# Project Name
+# Xray Mod
 
 [![GitHub Release](https://img.shields.io/github/v/release/DindaPutriFN/Xray-core.svg)](https://github.com/DindaPutriFN/Xray-core/releases)
 [![License](https://img.shields.io/github/license/DindaPutriFN/XRAy-core.svg)](LICENSE)
