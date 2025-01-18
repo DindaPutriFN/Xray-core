@@ -2,7 +2,7 @@ package proxyman
 
 import (
 	"sync"
-	"xray-core/common/protocol"
+	"github.com/DindaPutriFN/xray-core/common/protocol"
 )
 
 // UserManager manages the list of users.
