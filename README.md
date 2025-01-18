@@ -1,147 +1,88 @@
-# Project X
+# Project Name
 
-[Project X](https://github.com/XTLS) originates from XTLS protocol, providing a set of network tools such as [Xray-core](https://github.com/XTLS/Xray-core) and [REALITY](https://github.com/XTLS/REALITY).
+[![GitHub Release](https://img.shields.io/github/v/release/DindaPutriFN/Xray-core.svg)](https://github.com/DindaPutriFN/Xray-core/releases)
+[![License](https://img.shields.io/github/license/DindaPutriFN/XRAy-core.svg)](LICENSE)
 
-[README](https://github.com/XTLS/Xray-core#readme) is open, so feel free to submit your project [here](https://github.com/XTLS/Xray-core/pulls).
+## Description
+A comprehensive project supporting JSON-based configurations with added expiration functionality. Designed with flexibility, security, and simplicity in mind. Contributions and modifications are welcome!
 
-## Donation & NFTs
-
-- **ETH/USDT/USDC: `0xDc3Fe44F0f25D13CACb1C4896CD0D321df3146Ee`**
-- **Project X NFT: [Announcement of NFTs by Project X](https://github.com/XTLS/Xray-core/discussions/3633)**
-- **REALITY NFT: [XHTTP: Beyond REALITY](https://github.com/XTLS/Xray-core/discussions/4113)**
-
-## License
-
-[Mozilla Public License Version 2.0](https://github.com/XTLS/Xray-core/blob/main/LICENSE)
-
-## Documentation
-
-[Project X Official Website](https://xtls.github.io)
-
-## Telegram
-
-[Project X](https://t.me/projectXray)
-
-[Project X Channel](https://t.me/projectXtls)
-
-[Project VLESS](https://t.me/projectVless) (non-Chinese)
+## Features
+- **Expiration Date Support**:
+  - Utilize the `expired` field in JSON with the format `YYYY-MM-DD` to manage resource validity.
+- Modular and extendable codebase.
+- Open source and community-driven.
 
 ## Installation
 
-- Linux Script
-  - [XTLS/Xray-install](https://github.com/XTLS/Xray-install) (**Official**)
-  - [tempest](https://github.com/team-cloudchaser/tempest) (supports [`systemd`](https://systemd.io) and [OpenRC](https://github.com/OpenRC/openrc); Linux-only)
-- Docker
-  - [ghcr.io/xtls/xray-core](https://ghcr.io/xtls/xray-core) (**Official**)
-  - [teddysun/xray](https://hub.docker.com/r/teddysun/xray)
-  - [wulabing/xray_docker](https://github.com/wulabing/xray_docker)
-- Web Panel - **WARNING: Please DO NOT USE plain HTTP panels like 3X-UI**, as they are believed to be bribed by Iran GFW for supporting plain HTTP by default and refused to change (https://github.com/XTLS/Xray-core/pull/3884#issuecomment-2439595331), which has already put many users' data security in danger in the past few years. **If you are already using 3X-UI, please switch to the following panels, which are verified to support HTTPS and SSH port forwarding only:**
-  - [Marzban](https://github.com/Gozargah/Marzban)
-  - [Xray-UI](https://github.com/qist/xray-ui)
-  - [Hiddify](https://github.com/hiddify/Hiddify-Manager)
-- One Click
-  - [Xray-REALITY](https://github.com/zxcvos/Xray-script), [xray-reality](https://github.com/sajjaddg/xray-reality), [reality-ezpz](https://github.com/aleskxyz/reality-ezpz)
-  - [Xray_bash_onekey](https://github.com/hello-yunshu/Xray_bash_onekey), [XTool](https://github.com/LordPenguin666/XTool)
-  - [v2ray-agent](https://github.com/mack-a/v2ray-agent), [Xray_onekey](https://github.com/wulabing/Xray_onekey), [ProxySU](https://github.com/proxysu/ProxySU)
-- Magisk
-  - [Xray4Magisk](https://github.com/Asterisk4Magisk/Xray4Magisk)
-  - [Xray_For_Magisk](https://github.com/E7KMbb/Xray_For_Magisk)
-- Homebrew
-  - `brew install xray`
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/DindaPutriFN/Xray-core.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd Xray-core
+   ```
+
+3. Install dependencies (if any):
+   ```bash
+   sudo make
+   ```
+
+4. Run the project:
+   ```bash
+   sudp make install
+   ```
 
 ## Usage
 
-- Example
-  - [VLESS-XTLS-uTLS-REALITY](https://github.com/XTLS/REALITY#readme)
-  - [VLESS-TCP-XTLS-Vision](https://github.com/XTLS/Xray-examples/tree/main/VLESS-TCP-XTLS-Vision)
-  - [All-in-One-fallbacks-Nginx](https://github.com/XTLS/Xray-examples/tree/main/All-in-One-fallbacks-Nginx)
-- Xray-examples
-  - [XTLS/Xray-examples](https://github.com/XTLS/Xray-examples)
-  - [chika0801/Xray-examples](https://github.com/chika0801/Xray-examples)
-  - [lxhao61/integrated-examples](https://github.com/lxhao61/integrated-examples)
-- Tutorial
-  - [XTLS Vision](https://github.com/chika0801/Xray-install)
-  - [REALITY (English)](https://cscot.pages.dev/2023/03/02/Xray-REALITY-tutorial/)
-  - [XTLS-Iran-Reality (English)](https://github.com/SasukeFreestyle/XTLS-Iran-Reality)
-  - [Xray REALITY with 'steal oneself' (English)](https://computerscot.github.io/vless-xtls-utls-reality-steal-oneself.html)
-  - [Xray with WireGuard inbound (English)](https://g800.pages.dev/wireguard)
+1. Configure the `config.json` file with your desired settings:
+   ```json
+   {
+    "id": "96163240-c575-4811-81b4-8fee7a7f1aff",
+    "email": "example",
+    "expired": "2025-01-11"
+   }
+   ```
 
-## GUI Clients
-
-- OpenWrt
-  - [PassWall](https://github.com/xiaorouji/openwrt-passwall), [PassWall 2](https://github.com/xiaorouji/openwrt-passwall2)
-  - [ShadowSocksR Plus+](https://github.com/fw876/helloworld)
-  - [luci-app-xray](https://github.com/yichya/luci-app-xray) ([openwrt-xray](https://github.com/yichya/openwrt-xray))
-- Windows
-  - [v2rayN](https://github.com/2dust/v2rayN)
-  - [Furious](https://github.com/LorenEteval/Furious)
-  - [Invisible Man - Xray](https://github.com/InvisibleManVPN/InvisibleMan-XRayClient)
-- Android
-  - [v2rayNG](https://github.com/2dust/v2rayNG)
-  - [X-flutter](https://github.com/XTLS/X-flutter)
-  - [SaeedDev94/Xray](https://github.com/SaeedDev94/Xray)
-- iOS & macOS arm64
-  - [FoXray](https://apps.apple.com/app/foxray/id6448898396)
-  - [Streisand](https://apps.apple.com/app/streisand/id6450534064)
-- macOS arm64 & x64
-  - [V2rayU](https://github.com/yanue/V2rayU)
-  - [V2RayXS](https://github.com/tzmax/V2RayXS)
-  - [Furious](https://github.com/LorenEteval/Furious)
-  - [FoXray](https://apps.apple.com/app/foxray/id6448898396)
-- Linux
-  - [v2rayA](https://github.com/v2rayA/v2rayA)
-  - [Furious](https://github.com/LorenEteval/Furious)
-
-## Others that support VLESS, XTLS, REALITY, XUDP, PLUX...
-
-- iOS & macOS arm64
-  - [Shadowrocket](https://apps.apple.com/app/shadowrocket/id932747118)
-- Xray Tools
-  - [xray-knife](https://github.com/lilendian0x00/xray-knife)
-- Xray Wrapper
-  - [XTLS/libXray](https://github.com/XTLS/libXray)
-  - [xtlsapi](https://github.com/hiddify/xtlsapi)
-  - [AndroidLibXrayLite](https://github.com/2dust/AndroidLibXrayLite)
-  - [Xray-core-python](https://github.com/LorenEteval/Xray-core-python)
-  - [xray-api](https://github.com/XVGuardian/xray-api)
-- [XrayR](https://github.com/XrayR-project/XrayR)
-  - [XrayR-release](https://github.com/XrayR-project/XrayR-release)
-  - [XrayR-V2Board](https://github.com/missuo/XrayR-V2Board)
-- [Clash.Meta](https://github.com/MetaCubeX/Clash.Meta)
-  - [clashN](https://github.com/2dust/clashN)
-  - [Clash Meta for Android](https://github.com/MetaCubeX/ClashMetaForAndroid)
-- [sing-box](https://github.com/SagerNet/sing-box)
+2. Run the project and monitor logs for activity.
 
 ## Contributing
 
-[Code of Conduct](https://github.com/XTLS/Xray-core/blob/main/CODE_OF_CONDUCT.md)
+We welcome contributions from the community. To contribute:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b main`).
+3. Commit your changes (`git commit -m 'Add feature'`).
+4. Push to the branch (`git push origin feature-name`).
+5. Create a pull request.
 
 ## Credits
 
-- [Xray-core v1.0.0](https://github.com/XTLS/Xray-core/releases/tag/v1.0.0) was forked from [v2fly-core 9a03cc5](https://github.com/v2fly/v2ray-core/commit/9a03cc5c98d04cc28320fcee26dbc236b3291256), and we have made & accumulated a huge number of enhancements over time, check [the release notes for each version](https://github.com/XTLS/Xray-core/releases).
-- For third-party projects used in [Xray-core](https://github.com/XTLS/Xray-core), check your local or [the latest go.mod](https://github.com/XTLS/Xray-core/blob/main/go.mod).
+- **Modifications by**:
+  - [@Rerechan02](https://t.me/Rerechan02)
+  - [@FN_PROJECT](https://t.me/fn_project)
+- **Special thanks to**:
+  - [XTLS](https://xtls.github.io) for inspiration and contributions.
 
-## Compilation
+## License
 
-### Windows (PowerShell)
+This project is licensed under the MPL-2.0 License - see the [LICENSE](LICENSE) file for details.
 
-```powershell
-$env:CGO_ENABLED=0
-go build -o xray.exe -trimpath -ldflags "-s -w -buildid=" ./main
-```
+## Contact
 
-### Linux / macOS
+For support or inquiries, please contact:
+- [@Rerechan02](https://t.me/Rerechan02)
+- [@FN_PROJECT](https://t.me/fn_project)
 
-```bash
-CGO_ENABLED=0 go build -o xray -trimpath -ldflags "-s -w -buildid=" ./main
-```
+## Donations
 
-### Reproducible Releases
+If you find this project helpful and would like to support its development, consider donating:
 
-```bash
-make
-```
+- **QRIS ID**: [QRIS ID]([https://t.me/fn_project/245])
+- **Cryptocurrency**:
+  - Ethereum (ETH BEP20): `0x746C1ea43dc12FDEf0C8e2ddc927cb5eA767eB24`
 
-## Stargazers over time
+---
 
-[![Stargazers over time](https://starchart.cc/XTLS/Xray-core.svg)](https://starchart.cc/XTLS/Xray-core)
+We hope this project is helpful for your use case. If you like this project, please give it a ⭐ on GitHub!
