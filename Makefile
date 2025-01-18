@@ -1,6 +1,6 @@
 NAME = xray
 
-VERSION=$(shell git describe --always --dirty)
+VERSION="v1.0.0"
 
 # NOTE: This MAKEFILE can be used to build Xray-core locally and in Automatic workflows. It is \
 	provided for convenience in automatic building and functions as a part of it.
