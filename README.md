@@ -37,14 +37,21 @@ A comprehensive project supporting JSON-based configurations with added expirati
 
 ## Installation 2
 
-1. Get core mod:
+1. Get Source core mod:
    ```bash
-   wget https://github.com/DindaPutriFN/Xray-core/releases/download/1.1.0/xray
-   chmod +x xray
+   apt update
+   apt install git -y
+   apt install golang-go -y
+   apt install go -y
+   apt install binutils -y
+   git clone https://github.com/DindaPutriFN/Xray-core
    ```
 
-2. Usage core mod:
+2. Build & Usage core mod:
    ```bash
+   cd Xray-core
+   go mod tidy
+   go build -o xray ./main
    ./xray --help
    ```
 
