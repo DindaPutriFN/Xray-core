@@ -1,4 +1,4 @@
-module Xray-core
+module github.com/DindaPutriFN/xray-core
 go 1.21.4
 
 require (
